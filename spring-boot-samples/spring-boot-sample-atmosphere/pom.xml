@@ -77,4 +77,24 @@
 			</plugin>
 		</plugins>
 	</build>
+<repositories>
+    <repository>
+      <id>art-1</id>
+      <name>Central Repository</name>
+      <url>http://34.214.174.11:8081/artifactory/myrepo</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+</repositories>
+
+<distributionManagement>
+    <snapshotRepository>
+      <id>art-1</id>
+      <uniqueVersion>false</uniqueVersion>
+          <name>Central Repository</name>
+          <url>http://34.214.174.11:8081/artifactory/myrepo</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
